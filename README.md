@@ -34,7 +34,7 @@ The Mathematical Calculator MCP Server provides the following tools:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/calculator-mcp-server.git
+   git clone https://github.com/huhabla/calculator-mcp-server.git
    cd calculator-mcp-server
    ```
 
