@@ -51,9 +51,9 @@ The Mathematical Calculator MCP Server provides the following tools:
    pip install -r requirements.txt
    ```
 
-3. Run tests to verify everything works:
+3. Run doc-tests to verify everything works:
    ```bash
-   python test_calculator_server.py
+   bash run_doctests.sh
    ```
 
 ## Integration with Claude Desktop
@@ -127,7 +127,7 @@ and
 
 Run the comprehensive doctest suite:
 ```bash
-python test_calculator_server.py
+bash run_doctests.sh
 ```
 
 ### Interactive Development Mode
