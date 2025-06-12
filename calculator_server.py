@@ -546,7 +546,7 @@ def matrix_determinant(matrix: List[List[float]]) -> dict:
     """
     try:
         result = np.linalg.det(matrix)
-        return {"result": float(result)}
+        return {"result": round(float(result), 10)}
     except Exception as e:
         return {"error": str(e)}
 
