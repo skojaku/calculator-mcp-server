@@ -15,7 +15,7 @@ app = FastMCP(
     title="Mathematical Calculator",
     description="A server for complex mathematical calculations",
     version="1.0.0",
-    dependencies=["numpy", "scipy", "sympy"],
+    dependencies=["numpy", "scipy", "sympy", "matplotlib"],
 )
 
 TRANSPORT = "sse"
