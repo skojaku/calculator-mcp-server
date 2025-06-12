@@ -637,7 +637,7 @@ def plot_function(
         On error: {"error": <error message>}
 
     Examples:
-        >>> plot_graph("x**2")
+        >>> plot_function("x**2")
         {'result': "Plot generated successfully."}
 
     Notes:
