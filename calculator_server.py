@@ -638,7 +638,7 @@ def plot_function(
 
     Examples:
         >>> plot_function("x**2")
-        {'result': "Plot generated successfully."}
+        {'result': 'Plot generated successfully.'}
 
     Notes:
         - Use 'x' as the variable (e.g., x**2, not x²)
