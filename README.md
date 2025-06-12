@@ -74,6 +74,15 @@ To use this MCP server with Claude Desktop:
 
 3. Once installed, Claude will automatically have access to all the mathematical tools and functions.
 
+
+## Integration with Claude Code
+
+1. Make sure to install the MCP server in Claude Desktop
+
+2. Run `claude mcp add-from-claude-desktop`
+
+3. Select "FastMCP"
+
 ## Usage Examples
 
 After integrating with Claude Desktop, you can ask Claude to perform various mathematical operations. Here are some examples:
