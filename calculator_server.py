@@ -739,7 +739,7 @@ def factorize(expression: str) -> dict:
     try:
         x = sp.Symbol("x")
         factored_expression = sp.factor(expression)
-        return {"result": factored_expression}
+        return {"result": str(factored_expression)}
     except Exception as e:
         return {"error": str(e)}
 
