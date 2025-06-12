@@ -639,6 +639,7 @@ def plot_function(
     Examples:
         >>> plot_graph("x**2")
         {'result': "Plot generated successfully."}
+
     Notes:
         - Use 'x' as the variable (e.g., x**2, not x²)
         - Multiplication must be explicitly indicated with * (e.g., 2*x, not 2x)
@@ -696,7 +697,7 @@ def summation(expression: str, start: int = 0, end: int = 10) -> dict:
 
 
 @app.tool()
-def expend(expression: str) -> dict:
+def expand(expression: str) -> dict:
     """
     Expands an expression.
 
