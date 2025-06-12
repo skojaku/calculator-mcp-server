@@ -690,8 +690,10 @@ def summation(expression: str, start: int = 0, end: int = 10) -> dict:
     """
     try:
         x = sp.Symbol("x")
-        summation = sp.Sum(expression, (x, start, end))
-        return {"result": summation}
+        expr = sp.sympify(expression)
+        summation = sp.Sum(expr, (x, start, end))
+        result = summation.doit()
+        return {"result": int(result) if result.is_integer else float(result)}
     except Exception as e:
         return {"error": str(e)}
 
