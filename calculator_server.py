@@ -542,11 +542,11 @@ def matrix_determinant(matrix: List[List[float]]) -> dict:
 
     Examples:
         >>> matrix_determinant([[1, 2], [3, 4]])
-        {'result': [-2.0]}
+        {'result': -2.0}
     """
     try:
-        result = np.linalg.det(matrix).tolist()
-        return {"result": result}
+        result = np.linalg.det(matrix)
+        return {"result": float(result)}
     except Exception as e:
         return {"error": str(e)}
 
