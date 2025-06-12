@@ -566,7 +566,7 @@ def vector_dot_product(vector_a: tuple[float], vector_b: tuple[float]) -> dict:
 
     Examples:
         >>> vector_dot_product([1, 2], [7, 8])
-        {'result': [11]}
+        {'result': 23}
     """
     try:
         result = np.dot(vector_a, vector_b).tolist()
@@ -613,7 +613,7 @@ def vector_magnitude(vector: tuple[float]) -> dict:
 
     Examples:
         >>> vector_magnitude([1, 2, 3])
-        {'result': [3.7416573867739413]}
+        {'result': 3.7416573867739413}
     """
     try:
         result = np.linalg.norm(vector).tolist()
@@ -715,7 +715,7 @@ def expand(expression: str) -> dict:
     try:
         x = sp.Symbol("x")
         expanded_expression = sp.expand(expression)
-        return {"result": expanded_expression}
+        return {"result": str(expanded_expression)}
     except Exception as e:
         return {"error": str(e)}
 
